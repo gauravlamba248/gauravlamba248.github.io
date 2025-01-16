@@ -1,104 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
     <title>Gaurav's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link href="assets/img/portfolio.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">Gaurav</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <img src="assets/img/profile_pic.jpg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Gaurav</a></h1>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+                    <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+                    <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-cube"></i> <span>Skills</span></a></li>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h1>Hi, I'm Gaurav</h1>
-                <p>I'm a Computer Science and Engineering graduate specializing in Machine Learning, Data Science, and Cloud Computing. I enjoy solving real-world problems through innovative technologies.</p>
-            </div>
-        </section>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+            <h1>Gaurav</h1>
+            <p>I'm <span class="typed" data-typed-items="Machine Learning Engineer, Data Scientist, Developer"></span></p>
+        </div>
+    </section>
 
-        <section id="education" class="section">
-            <div class="container">
-                <h2>Education</h2>
-                <p><strong>B.Tech. in Computer Science and Engineering</strong> - Central University of Haryana</p>
-                <p>Relevant Coursework: Data Structures, Algorithms, Cloud Computing, and more.</p>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About</h2>
+                <p>Hi, I'm Gaurav, a Computer Science graduate with expertise in Machine Learning, Data Science, and Cloud Computing. I’m passionate about solving real-world problems with innovative solutions and working on exciting projects.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="experience-item">
-                    <h3>AP2V Academy</h3>
-                    <p><strong>Python Programming</strong></p>
-                    <p>Hands-on experience in Python programming, data analysis workflows, and predictive model development.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Sparkspite</h3>
-                    <p><strong>Machine Learning Model Development</strong></p>
-                    <p>Built predictive models for loan approvals using advanced preprocessing and tools like Scikit-learn, Seaborn, and Matplotlib.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
+    <!-- ======= Projects Section ======= -->
+    <section id="projects" class="projects section-bg">
+        <div class="container">
+            <div class="section-title">
                 <h2>Projects</h2>
-                <div class="project-item">
-                    <h3><a href="https://github.com/gauravlamba248/AI-KnowledgeNet" target="_blank">Web Scraping System</a></h3>
-                    <p>Automated knowledge extraction from 50+ websites, processing over 1GB of data using Python libraries like Pandas, BeautifulSoup, and Scikit-learn.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="projects-wrap">
+                        <img src="assets/img/projects/ai-knowledge.png" class="img-fluid" alt="">
+                        <div class="projects-links">
+                            <a href="https://github.com/gauravlamba248/AI-KnowledgeNet" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                        <h4>Web Scraping System</h4>
+                        <p>Automated knowledge extraction system using Python libraries like Pandas, BeautifulSoup, and Scikit-learn.</p>
+                    </div>
                 </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/gauravlamba248/Predict-Loan" target="_blank">Predict Loan</a></h3>
-                    <p>Built a machine learning model with 85% accuracy to predict loan approvals, processing over 10,000 records.</p>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="projects-wrap">
+                        <img src="assets/img/projects/predict-loan.png" class="img-fluid" alt="">
+                        <div class="projects-links">
+                            <a href="https://github.com/gauravlamba248/Predict-Loan" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                        <h4>Loan Prediction</h4>
+                        <p>Developed a machine learning model with 85% accuracy to predict loan approvals, cleaning over 10,000 records.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Technical Skills</h2>
-                <ul>
-                    <li>Programming Languages: Python, C/C++, SQL</li>
-                    <li>Technologies: MySQL, DBMS, Power BI, Cloud Computing</li>
-                    <li>Tools: Jupyter Notebooks, Visual Studio Code, GitHub</li>
-                </ul>
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills</h2>
             </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form id="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Python</strong> - Advanced</li>
+                        <li><strong>Machine Learning</strong> - Proficient</li>
+                        <li><strong>Data Analysis</strong> - Advanced</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>HTML & CSS</strong> - Proficient</li>
+                        <li><strong>MySQL</strong> - Intermediate</li>
+                        <li><strong>Git & GitHub</strong> - Advanced</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>Connect with me: 
-            <a href="https://www.linkedin.com/in/gauravlamba248/" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/gauravlamba248" target="_blank">GitHub</a> | 
-            <a href="https://leetcode.com/gauravlamba248/" target="_blank">LeetCode</a>
-        </p>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+            <form action="mailto:gauravlamba248@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2025 Gaurav. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
